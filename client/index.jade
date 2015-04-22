@@ -1,15 +1,44 @@
 doctype html
 html
-  head
-    meta(charset='utf-8')      
-    title Trieu Andrew Dinh
+  head     
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Andrew Trieu Dinh Portfolio')
+    meta(name='author', content='Andrew Trieu Dinh')
+    
+    title Andrew Trieu Dinh Portfolio
+    
+    link(href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/superhero/bootstrap.min.css", rel="stylesheet")
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/vendor/animate.css/animate.min.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
-    h1#title Trieu Andrew Dinh
-    h2 This is a modification
-    ul
-      li: a(href='http://movie.andrewtdinh.com') Movie Tribute
-      li: a(href='http://design.andrewtdinh.com/design/cool.html') Design with CSS
-      li: a(href='http://calculator.andrewtdinh.com') I'm Maculator
+    .container-fluid
+      .row
+        .col-xs-12
+          #banner
+      .row
+        .col-xs-3
+        .col-xs-5
+          #centerFocus
+            h1#title Andrew Trieu Dinh
+            h3.slogan Full Stack Web Dev Passionate About Angular Single Page Apps
+            h3.slogan 
+            h4#available I am available for work starting June 2015.
+      .row#bgImage
+        .col-xs-3
+        .col-xs-3
+          ul
+            li: a(href='http://movie.andrewtdinh.com') Movie Tribute
+            li: a(href='http://checkers.andrewtdinh.com') Alien Checkers
+            li: a(href='http://calculator.andrewtdinh.com') I'm Maculator
+        .col-xs-2
+          ul
+            li: a(href='http://hanoitowers.andrewtdinh.com') Leaning Towers of Donut
+            li: a(href='http://memory.andrewtdinh.com') Memory Game
+        .col-xs-4
+
+
+    script(src=isProd ? '/index.min.js' : '/index.js')
